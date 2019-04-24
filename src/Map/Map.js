@@ -22,8 +22,6 @@ class Map extends Component {
     };
   }
 
-  //this props weather should be a <Weather /> card
-
   onViewportChange = viewport => { 
     const {...etc} = viewport
     this.setState({viewport: etc})
