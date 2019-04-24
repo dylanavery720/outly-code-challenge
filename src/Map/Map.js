@@ -16,9 +16,7 @@ class Map extends Component {
             height: window.innerHeight,
             width: window.innerWidth,
         },
-        weather: {
-
-        }
+        weather: {}
     };
   }
 

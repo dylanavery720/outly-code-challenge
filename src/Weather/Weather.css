@@ -1,13 +1,18 @@
 .Weather-title {
     padding: 5px;
+    text-decoration: underline yellowgreen;
 }
 
-.Weather-link {
-    padding: 5px;
-    cursor: pointer; 
+.high {
+    color: red;
 }
 
-.Weather-link:hover {
-    color: green;
+.low {
+    color: blue;
 }
-  
+
+.name {
+    text-shadow: 2px black;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
