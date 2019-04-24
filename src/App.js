@@ -6,18 +6,8 @@ require('dotenv').config();
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
 
+
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
-  async componentDidMount() {
-
-  }
-
   render() {
     return (
       <div className="App">

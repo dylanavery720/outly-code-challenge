@@ -1,4 +1,5 @@
 async function getWeather(lat, lon) {
+    if(lon > 180) {lon = 180}
     const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=${process.env.REACT_APP_OPEN_WEATHER_APIKEY}`, {
       accept: 'application/json',
     });

@@ -2,6 +2,14 @@ div {
   cursor: pointer;
 }
 
+.mapboxgl-popup {
+  box-shadow: 4px 3px 10px black;
+}
+
+.mapboxgl-popup-tip {
+  border: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
