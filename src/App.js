@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl'
-import { getWeather } from './Requests/requests'
 import Map from './Map/Map'
 require('dotenv').config();
 

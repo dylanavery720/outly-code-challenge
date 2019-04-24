@@ -1,0 +1,13 @@
+.Weather-title {
+    padding: 5px;
+}
+
+.Weather-link {
+    padding: 5px;
+    cursor: pointer; 
+}
+
+.Weather-link:hover {
+    color: green;
+}
+  
