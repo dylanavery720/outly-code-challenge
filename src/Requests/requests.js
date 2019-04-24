@@ -1,5 +1,5 @@
-async function getWeather() {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${process.env.REACT_APP_OPEN_WEATHER_APIKEY}`, {
+async function getWeather(lat, lon) {
+    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=${process.env.REACT_APP_OPEN_WEATHER_APIKEY}`, {
       accept: 'application/json',
     });
     const checkedStatus = checkStatus(response);
