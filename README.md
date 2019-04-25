@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Outside Analytics Code Challenge (Dylan Avery)
+=========
 
-## Available Scripts
+Summary
+---
+This application provides a user with a world map that the user can click on in order to obtain weather information about the clicked on location. The code was written in the VSCode IDE. I chose the third party library "react-map-gl" so that I could more easily render the map in a react component. 
 
-In the project directory, you can run:
+### Setup and Run
+ * Install dependencies
+    ```
+    #!sh
+    yarn
+    ```
 
-### `npm start`
+ * Add a file to the root directory named '.env', add to it the following enviroment varibles.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    ```
+    REACT_APP_MAPBOX_ACCESS_TOKEN = ''
+    REACT_APP_OPEN_WEATHER_APIKEY = ''
+    ```
+    API Keys can be obtained from Mapbox and Open Weather Map. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+ * Run application
+    ```
+    #!sh
+    yarn start
+    ```
 
-### `npm test`
+ ### Public URL
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ * The application is deployed to 
 
-### `npm run build`
+### EdgeCases
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* One edge case I encountered was the bad request that occurs when a user clicks on an area of the map with an invalid longitide. Rather than make the map non repeating, I chose to force the longitude within valid boundaries if an invalid input is detected.   
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
