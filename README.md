@@ -28,7 +28,7 @@ This application provides a user with a world map that the user can click on in 
 
  ### Public URL
 
- * The application is deployed to 
+ * The application is deployed to https://warm-scrubland-44009.herokuapp.com/
 
 ### EdgeCases
 
