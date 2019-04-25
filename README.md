@@ -18,7 +18,7 @@ This application provides a user with a world map that the user can click on in 
     REACT_APP_MAPBOX_ACCESS_TOKEN = ''
     REACT_APP_OPEN_WEATHER_APIKEY = ''
     ```
-    API Keys can be obtained from Mapbox and Open Weather Map. 
+    API Keys can be obtained from [Mapbox](https://account.mapbox.com/access-tokens/) and [Openweather API](https://openweathermap.org/appid). 
 
  * Run application
     ```
