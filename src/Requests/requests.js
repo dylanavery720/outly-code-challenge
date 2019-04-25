@@ -3,7 +3,7 @@ async function getWeather(lat, lon) {
     lon = 180;
   }
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=${
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=${
       process.env.REACT_APP_OPEN_WEATHER_APIKEY
     }`,
     {
